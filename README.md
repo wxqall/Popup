@@ -43,7 +43,7 @@
 	var index = $(this).index();
 	var effect = $(this).attr("data-effect");
 	openPop(effect);
-	})
+	});
   });
 
   
