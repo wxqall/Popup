@@ -25,6 +25,7 @@
 		</div>	
 
   /*调用*/
+  
   function openPop(effect){
 	var pop = new popF();
 	pop.defult({
