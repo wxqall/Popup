@@ -26,24 +26,24 @@
 
   /*调用*/
   function openPop(effect){
-				var pop = new popF();
-				pop.defult({
-					content:"Nifty Modal Window Effects Some inspiration for different modal window appearances",
-					title:"title",
-					effect:effect,
-					init:function(){
-						this.$wrap.click(function(e){ 
-							//console.log(this);
-							//alert($(e.target).text())
-						})
-					}
-				});
-			}
-			$(".list-click li").on("click",function(){
-				var index = $(this).index();
-				var effect = $(this).attr("data-effect");
-				openPop(effect);
+	var pop = new popF();
+	pop.defult({
+		content:"Nifty Modal Window Effects Some inspiration for different modal window appearances",
+		title:"title",
+		effect:effect,
+		init:function(){
+			this.$wrap.click(function(e){ 
+				//console.log(this);
+				//alert($(e.target).text())
 			})
+		}
+	});
+	}
+	$(".list-click li").on("click",function(){
+	var index = $(this).index();
+	var effect = $(this).attr("data-effect");
+	openPop(effect);
+	})
   });
 
   
